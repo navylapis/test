@@ -94,7 +94,6 @@ const answers = [
 
   function assessment{
 　var random = Math.floor( Math.random() * answers.length )
-    }
 
   const index = var random
   let result = answers[index];
