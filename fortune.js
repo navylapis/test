@@ -92,7 +92,7 @@ const answers = [
 
   // 選択肢の中からランダムになるはず
 
-  function assessment{
+  function assessment(userName){
 　var random = Math.floor( Math.random() * answers.length )
 
   const index = var random
