@@ -93,7 +93,7 @@ const answers = [
   // 選択肢の中からランダムになるはず
 
   function assessment(userName){
-　const index = Math.floor(Math.random() * answers.length);
+  const index = Math.floor(Math.random() * answers.length);
   let result = answers[index];
 
   result = result.replaceAll('###userName###', userName);
