@@ -93,15 +93,10 @@ const answers = [
  * @param {string} userName ユーザの名前
  * @return {string} 診断結果
  */
-function assessment(userName) {
-  // 全文字のコード番号を取得してそれを足し合わせる
-  let sumOfCharCode = 0;
-  for (let i = 0; i < userName.length; i++) {
-    sumOfCharCode = sumOfCharCode + userName.charCodeAt(i);
-  }
 
-  // 文字のコード番号の合計を回答の数で割って添字の数値を求める
-  const index = sumOfCharCode % answers.length;
+  // 選択肢の中からランダムになるはず
+　var random = Math.floor( Math.random() * answers.length )
+  const index = var random
   let result = answers[index];
 
   result = result.replaceAll('###userName###', userName);
